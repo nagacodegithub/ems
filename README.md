@@ -46,9 +46,13 @@ npm install
 Create a `.env` file:
 
 ```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/employeeDB
-JWT_SECRET=your_jwt_secret
+NODE_ENV=development
+PORT=8000
+MONGODB_URI=mongodb://localhost:27017/ems
+ACCESS_SECRET = your_jwt_access_token_secret
+REFRESH_SECRET = your_jwt_refresh_token_secret
+CLIENT_URL = http://localhost:5173
+BASE_URL = http://localhost:8000
 ```
 
 Start the backend:
