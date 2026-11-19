@@ -16,8 +16,8 @@ app.use(cookieParser());
 app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
 app.use(
   cors({
-      origin: "http://localhost:5173",
-     credentials:true,
+      origin:process.env.CLIENT_URL
+      credentials:true,
   }),
 );
 app.use(express.static(path.join(__dirname, "public")));
