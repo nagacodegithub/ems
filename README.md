@@ -72,6 +72,7 @@ npm run dev
 | Role | Permissions |
 |---|---|
 | Admin | Login and manage employees |
+| User  | Login and not allowed access manage employees |
 | Employee | No login or management access |
 
 All employee management operations are restricted to authenticated administrators.
